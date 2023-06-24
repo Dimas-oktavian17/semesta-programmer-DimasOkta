@@ -27,10 +27,10 @@
             <h5 class="text-xl font-medium text-gray-900 dark:text-white">
               Sign in to our platform
             </h5>
-            <div class="flex lg:flex-row">
-              <!-- Nama -->
-              <div class="w-full lg:w-1/2 lg:pr-8">
-                <div>
+            <div class="flex lg:flex-col">
+              <!-- Nama & kelas -->
+              <div class="flex flex-row w-full ">
+                <div class="pr-1">
                   <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Your username
                   </label>
@@ -38,7 +38,7 @@
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4A72FF] focus:border-[#4A72FF] block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                     placeholder="DimasOkr" required="" />
                 </div>
-                <div class="lg:mt-4">
+                <div class="pl-1">
                   <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                     password</label>
                   <input type="password" name="password" id="passwordInput" placeholder="••••••••"
@@ -46,28 +46,60 @@
                     required="" />
                 </div>
               </div>
-              <div class="w-full lg:w-1/2 lg:pl-8">
-                <div>
+              <!-- Jenjang & Provinsi -->
+              <div class="flex flex-row w-full pt-4 ">
+                <div class="lg:w-1/2 lg:pr-1">
                   <label for="a-select"
                     class="flex flex-col items-start mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Jenjang
+                    <select class="w-full mt-1" id="a-select">
+                      <option value="" class="" data-display="Select">None</option>
+                      <option value="SD">SD</option>
+                      <option value="SMP">SMP</option>
+                      <option value="SMA">SMA</option>
+                      <option value="SMK">SMK</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="lg:w-1/2 lg:pl-1">
+                  <label for="prov"
+                    class="flex flex-col items-start mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Provinsi
-                    <select class="px-8 mt-1" id="a-select">
-                      <option value="" class="" data-display="Select">All</option>
-                      <option value="bawah laut">bawah laut</option>
-                      <option value="enum">enum</option>
-                      <option value="fumarol">fumarol</option>
-                      <option value="kaldera">kaldera</option>
-                      <!-- first option -->
-                      <!-- mid option -->
-                      <option value="kerucut">kerucut</option>
-                      <option value="kerucut bara">kerucut bara</option>
-                      <option value="kompleks">kompleks</option>
-                      <option value="kubah lava">kubah lava</option>
-                      <!-- End option -->
-                      <option value="maar">maar</option>
-                      <option value="perisai">perisai</option>
-                      <option value="stratovulkan">stratovulkan</option>
-                      <option value="supervulkan">supervulkan</option>
+                    <select class="w-full mt-1" id="prov">
+                      <option value="" class="" data-display="Select">None</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <!-- Kota & Kecamatan -->
+              <div class="flex flex-row w-full pt-4">
+                <div class="lg:w-1/2 lg:pr-1">
+                  <label for="kota"
+                    class="flex flex-col items-start mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Kabupaten/Kota
+                    <select class="w-full mt-1" id="kota">
+                      <option value="" class="" data-display="Select">None</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="lg:w-1/2 lg:pl-1">
+                  <label for="kec"
+                    class="flex flex-col items-start mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Kecamatan
+                    <select class="w-full mt-1" id="kec">
+                      <option value="" class="" data-display="Select">None</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <!-- Sekolah -->
+              <div class="flex flex-row w-full pt-4">
+                <div class="w-full ">
+                  <label for="sekolah"
+                    class="flex flex-col items-start mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Sekolah
+                    <select class="w-full mt-1" id="sekolah">
+                      <option value="" class="" data-display="Select">None</option>
                     </select>
                   </label>
                 </div>
