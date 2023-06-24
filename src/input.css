@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~nice-select2/dist/css/nice-select2.css";
 /* container responsive layout */
 @layer components {
   .container {

@@ -19,6 +19,7 @@
     "dotenv": "^16.3.1",
     "gsap": "^3.12.1",
     "just-validate": "^4.2.0",
-    "locomotive-scroll": "^4.1.4"
+    "locomotive-scroll": "^4.1.4",
+    "nice-select2": "^2.1.0"
   }
 }
