@@ -21,7 +21,11 @@ import "./src/style.css";
 //     </p>
 //   </div>
 // `;
-
+import "dotenv/config";
 // setupCounter(document.querySelector("#counter"));
-require("dotenv").config();
-console.log(process.env);
+// import dotenv from "dotenv/config";
+dotenv.config();
+// const apiUrl = process.env.;
+// console.log(apiUrl); // Output: https://api.example.com
+// console.log("hi");
+console.log(import.meta.env.API_SEKOLAH);

@@ -7,3 +7,5 @@
 //   element.addEventListener('click', () => setCounter(counter + 1))
 //   setCounter(0)
 // }
+require("dotenv").config();
+console.log(process.env);
